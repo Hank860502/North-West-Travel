@@ -2,8 +2,8 @@ class CreateDepartures < ActiveRecord::Migration
   def change
     create_table :departures do |t|
 
-    	t.dates :start
-    	t.dates :end
+    	t.date :start
+    	t.date :end
       t.timestamps null: false
     end
   end
