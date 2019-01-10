@@ -104,7 +104,15 @@ sfdingding = Package.create!(
 	category: "urban"
 )
 
+firstdepart = Departure.create!(
+	start: "2019/01/01",
+	end: "2019/01/05"
+)
 
+PackagesDeparture.create!(
+	package_id: atlantatrain.id,
+	departure_id: firstdepart.id
+)
 
 
 
